@@ -7,15 +7,18 @@ var generateBtn = document.querySelector("#generate");
 // start of password input function
 function writePassword() {
 
-    var password = generatePassword();
-    var password = generateCharacters ();
-    var password = generateSpecial ();
+   
 
     var passwordText = document.querySelector("#password");
   
     // Makes the password show on screen
     passwordText.value = password;
 
+    
+    var password = generatePassword();
+    var password = generateCharacters();
+    var password = generateSpecial();
+    var generatePassword = generatePassword();
 
     // generate password function
     function generatePassword() {
@@ -34,6 +37,9 @@ function writePassword() {
         window.alert ("You have chosen to have " + passwordLength + " characters.")
       }
       console.log(passwordLength);
+
+      
+      return generatePassword.passwordLength;
       
     }
 
@@ -72,7 +78,6 @@ function writePassword() {
       window.alert ("Please choose a correct value.")
       }
     }
-
 
 
 
