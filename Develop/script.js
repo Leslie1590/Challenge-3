@@ -1,50 +1,30 @@
 // get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+// generate password function
+  function generatePassword() { 
+  console.log("Hey")
 
   
-
-// start of password input function
-function writePassword() {
-
-   
-
-    var passwordText = document.querySelector("#password");
   
-    // Makes the password show on screen
-    passwordText.value = password;
+  var passwordLength = "";
 
-    
-    var password = generatePassword();
-    var password = generateCharacters();
-    var password = generateSpecial();
-    var generatePassword = generatePassword();
+  while (passwordLength === "" || passwordLength === null) {
+  passwordLength = prompt("What length is your password? TYPE any number between 8 and 128.")
+  }
+  if (passwordLength <=7) {
+  window.alert ("Please enter in a correct value.")
+  }
+  else if (passwordLength >=129) {
+  window.alert ("Please enter in a correct value.")
+  }
+  else {
+  window.alert ("You have chosen to have " + passwordLength + " characters.")
+  }
+  return passwordLength 
 
-    // generate password function
-    function generatePassword() {
-      var passwordLength = "";
-
-      while (passwordLength === "" || passwordLength === null) {
-      passwordLength = prompt("What length is your password? TYPE any number between 8 and 128.")
-        }
-      if (passwordLength <=7) {
-        window.alert ("Please enter in a correct value.")
-      }
-      else if (passwordLength >=129) {
-        window.alert ("Please enter in a correct value.")
-      }
-      else {
-        window.alert ("You have chosen to have " + passwordLength + " characters.")
-      }
-      console.log(passwordLength);
-
-      
-      return generatePassword.passwordLength;
-      
-    }
-
-     // generate character types
-    function generateCharacters() {
+  // generate character types
+  function generateCharacters() {
     var passwordCharacters = "";
 
     while (passwordCharacters === "" || passwordCharacters === null) {
@@ -78,10 +58,22 @@ function writePassword() {
       window.alert ("Please choose a correct value.")
       }
     }
+  };
+
+// start of password input function
+function writePassword() {
+    var password = generatePassword();
+   
+    var passwordText = document.querySelector("#password");
+  
+    // Makes the password show on screen
+    passwordText.value = password;
+  };
 
 
 
-};
+
+   
 
 
 
@@ -91,3 +83,5 @@ function writePassword() {
 // Add event listener to generate button
 
 generateBtn.addEventListener("click", writePassword);
+
+
