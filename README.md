@@ -1,6 +1,6 @@
-# Password Generator Starter Code
+## Challenge 3
 
-# Acceptance Criteria
+## Acceptance Criteria
 
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
@@ -22,12 +22,11 @@ THEN the password is either displayed in an alert or written to the page
 
 *CSS
 
-##Website
-
+## Website
 https://leslie1590.github.io/Challenge-3/
 
-![ ALT] (/assets/images/readmescreenshot.png)
+ ! [ ALT](/assets/images/readmescreenshot.png)
 
-##Contribution
+## Contribution
 
 Leslie1590
